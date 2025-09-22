@@ -15,7 +15,7 @@ export default [
         ...globals.node,
         ...globals.jest,
       },
-      sourceType: 'commonjs',
+      sourceType: 'module',
     },
   },
 ];
