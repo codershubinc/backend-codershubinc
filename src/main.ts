@@ -11,7 +11,13 @@ async function bootstrap() {
   app.use(cookieParser());
   console.log(`Server running on http://localhost:${process.env.PORT}`);
   app.enableCors({
-    origin: ['http://localhost:3001' , 'https://api.codershubinc.tech/' , '*'], // or your frontend URL
+    origin: [
+      'http://localhost:3000',
+      'https://api.codershubinc.tech/',
+      'https://codershubinc.tech/',
+      'https://www.codershubinc.tech/',
+      'http://localhost:3002/'
+    ], // or your frontend URL
     credentials: true, // important for cookies
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
