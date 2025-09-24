@@ -17,9 +17,7 @@ const vsMusic: ProjectData = {
     techStack: [
         "TypeScript",
         "VS Code Extension API",
-        "Node.js",
-        "Spotify Web API",
-        "Apple Music API"
+        "Node.js", 
     ],
     installationSteps: [
         "Open VS Code",
