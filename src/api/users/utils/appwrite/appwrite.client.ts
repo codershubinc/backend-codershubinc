@@ -1,5 +1,5 @@
 import { Client } from "node-appwrite"; 
-import { envConfig } from "src/config/index";
+import { envConfig } from "../../../../config/index";
 const client = new Client();
 
 console.table({
