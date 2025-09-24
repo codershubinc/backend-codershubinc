@@ -40,6 +40,7 @@ export interface ProjectData {
     futurePlans?: string[];
     contributors?: ContributorData;
     creator: CreatorData; 
+    id:string;
 }
 
 // Simplified project data for listings and cards

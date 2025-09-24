@@ -49,7 +49,8 @@ const githubNewtab : ProjectData = {
         'https://store-images.s-microsoft.com/image/apps.43183.68a327b2-a554-4727-83d4-847c61f5175d.c4486310-10fc-4360-aedd-9d91aee1f2e9.5c3f5627-1c43-476e-b585-000798227e05',
         'https://store-images.s-microsoft.com/image/apps.43183.68a327b2-a554-4727-83d4-847c61f5175d.c4486310-10fc-4360-aedd-9d91aee1f2e9.5c3f5627-1c43-476e-b585-000798227e05',
         
-    ]
+    ],
+    id: "githubNewtab"
 } 
 
 export default githubNewtab;

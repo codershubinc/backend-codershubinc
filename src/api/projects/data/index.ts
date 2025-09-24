@@ -2,8 +2,8 @@ import githubNewtab from "./githubNewtab";
 import vsMusic from "./vs-music";
 
 export const projectsData = {
-    "githubNewtab": githubNewtab,
-    "vs-music": vsMusic
+    [githubNewtab.id]: githubNewtab,
+    [vsMusic.id]: vsMusic
 }
 
 export const projectList = Object.keys(projectsData);

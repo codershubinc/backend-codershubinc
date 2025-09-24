@@ -47,7 +47,8 @@ const vsMusic: ProjectData = {
     screenshots: [
         'https://github.com/codershubinc/vs-music/raw/HEAD/ss.png',
         'https://github.com/codershubinc/vs-music/raw/HEAD/ss0.png'
-    ]
+    ],
+    id: "vs-music"
 };
 
 export default vsMusic;
