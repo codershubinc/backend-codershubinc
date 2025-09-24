@@ -12,7 +12,7 @@ class commonAuth {
             console.error('Error getting current user:', error);
             throw error;
         }
-    }
+    } 
 }
 
 const CommonAuth = new commonAuth();

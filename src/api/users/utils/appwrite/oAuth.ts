@@ -1,18 +1,22 @@
 import { Account, OAuthProvider } from "node-appwrite";
 import client from "./appwrite.client";
 
-class OAuth {
+class oAuth {
     account = new Account(client);
 
     async createOAuth2SessionGoogle(
-        successUrl: string,
-        failureUrl: string,
+        success: string,
+        failure: string
     ): Promise<any> {
         try {
+            console.log('failure url:', failure);
+            console.log('success url:', success);
+
             return await this.account.createOAuth2Token(
                 OAuthProvider.Google,
-                successUrl,
-                failureUrl
+                success,
+                failure,
+                []
             );
         } catch (error) {
             console.error('Error creating OAuth2 session with Google:', error);
@@ -20,3 +24,6 @@ class OAuth {
         }
     }
 }
+
+const OAuth = new oAuth();
+export default OAuth;

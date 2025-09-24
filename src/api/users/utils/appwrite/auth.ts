@@ -1,6 +1,6 @@
 import { Account, ID, Users } from "node-appwrite";
 import client from "./appwrite.client";
-import type { EmailPassLogin, EmailPassSignIn } from "../../models/auth.model";
+import type { EmailPassLogin, EmailPassSignIn } from "../../auth/models/auth.model";
 
 class auth {
     users = new Users(client);
@@ -23,10 +23,11 @@ class auth {
 
     async login(data: EmailPassLogin): Promise<any> {
         try {
-            return await this.accounts.createEmailPasswordSession(
+            const session = await this.accounts.createEmailPasswordSession(
                 data.email,
                 data.password
             );
+            return session;
         } catch (error) {
             console.error('Error during login:', error);
             throw error;
@@ -44,7 +45,7 @@ class auth {
             throw error;
         }
     }
-   
+
 }
 
 
